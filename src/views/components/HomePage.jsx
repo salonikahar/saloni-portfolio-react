@@ -49,23 +49,25 @@ const HomePage = () => {
               Let's Connect
               <i className="fas fa-arrow-right"></i>
             </button>
-            <button className="secondary-btn">
-              View Portfolio
-              <i className="fas fa-briefcase"></i>
-            </button>
+            <a href="https://saloni-portfolio-react.vercel.app/" style={{textDecoration:'none'}}>
+              <button className="secondary-btn" >
+                View Portfolio
+                <i className="fas fa-briefcase"></i>
+              </button>
+            </a>
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-link" aria-label="GitHub">
+            <a href="https://github.com/salonikahar" className="social-link" aria-label="GitHub">
               <i className="fab fa-github"></i>
             </a>
-            <a href="#" className="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/saloni-kahar-a85b032b5" className="social-link" aria-label="LinkedIn">
               <i className="fab fa-linkedin"></i>
             </a>
             <a href="#" className="social-link" aria-label="Twitter">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" className="social-link" aria-label="Instagram">
+            <a href="https://www.instagram.com/s_kahar_11" className="social-link" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
