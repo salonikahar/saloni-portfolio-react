@@ -30,7 +30,7 @@ const Resume = () => {
         <div className="section-header">
           <h2 className="section-title">Resume</h2>
           <p className="section-subtitle">My formal Bio Details</p>
-          <button className="download-cv">
+          <button className="download-cv" onClick={() => window.open(require('../../assets/document/resume.pdf'), '_blank')}>
             Download CV
             <i className="fas fa-download"></i>
           </button>

@@ -7,7 +7,8 @@ import Resume from './views/components/Resume';
 import Portfolio from './views/components/Portfolio';
 import Testimonials from './views/components/Testimonials';
 import Contact from './views/components/Contact';
-import Header from './views/components/Header';
+
+
 import Sidebar from './views/components/Sidebar';
 import MobileHeader from './views/components/MobileHeader';
 import MainContent from './views/components/MainContent';
@@ -46,7 +47,6 @@ function App() {
         <Sidebar />
         <MobileHeader />
         <MainContent>
-          <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />

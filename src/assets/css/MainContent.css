@@ -1,7 +1,7 @@
 /* Dark Theme Variables */
 :root {
   /* Deep Dark Colors */
-  --bg-primary: #18181b;
+  --bg-primary: #18181b3b;
   --bg-secondary: #232326;
   /* Additional dark backgrounds for consistency */
   --dark-bg-primary: #18181b;
@@ -136,7 +136,6 @@
   }
 }
 
-/* Particle Background Animation */
 .particles-background {
   position: absolute;
   top: 0;
@@ -145,6 +144,7 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .particle {
@@ -152,107 +152,7 @@
   border-radius: 50%;
   filter: blur(8px);
   opacity: 0.15;
-  animation: float 20s infinite ease-in-out;
-}
-
-.particle-1 {
-  width: 180px;
-  height: 180px;
-  top: 10%;
-  left: 10%;
-  background: var(--accent);
-  animation-delay: 0s;
-  animation-duration: 18s;
-}
-
-.particle-2 {
-  width: 220px;
-  height: 220px;
-  top: 80%;
-  left: 80%;
-  background: var(--button-cta);
-  animation-delay: -2s;
-  animation-duration: 22s;
-}
-
-.particle-3 {
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 15%;
-  background: var(--accent-muted);
-  animation-delay: -4s;
-  animation-duration: 16s;
-}
-
-.particle-4 {
-  width: 200px;
-  height: 200px;
-  top: 20%;
-  left: 75%;
-  background: var(--accent);
-  animation-delay: -6s;
-  animation-duration: 20s;
-}
-
-.particle-5 {
-  width: 160px;
-  height: 160px;
-  top: 70%;
-  left: 30%;
-  background: var(--button-cta);
-  animation-delay: -8s;
-  animation-duration: 24s;
-}
-
-.particle-6 {
-  width: 190px;
-  height: 190px;
-  top: 30%;
-  left: 40%;
-  background: var(--accent);
-  animation-delay: -10s;
-  animation-duration: 19s;
-}
-
-.particle-7 {
-  width: 140px;
-  height: 140px;
-  top: 60%;
-  left: 5%;
-  background: var(--accent-muted);
-  animation-delay: -12s;
-  animation-duration: 17s;
-}
-
-.particle-8 {
-  width: 210px;
-  height: 210px;
-  top: 15%;
-  left: 85%;
-  background: var(--button-cta);
-  animation-delay: -14s;
-  animation-duration: 21s;
-}
-
-.particle-9 {
-  width: 170px;
-  height: 170px;
-  top: 85%;
-  left: 50%;
-  background: var(--accent);
-  animation-delay: -16s;
-  animation-duration: 23s;
-}
-
-.particle-10 {
-  width: 130px;
-  height: 130px;
-  top: 40%;
-  left: 90%;
-  background: var(--accent-muted);
-  animation-delay: -18s;
-  animation-duration: 15s;
+  animation: float infinite ease-in-out;
 }
 
 @keyframes float {
@@ -273,6 +173,7 @@
     opacity: 0.18;
   }
 }
+
 
 /* Background Pattern and Overlay */
 .main-content::before {

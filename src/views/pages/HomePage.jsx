@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import HomePageHero from '../components/HomePage';
 import About from '../components/About';
 import Services from '../components/Services';
 import Resume from '../components/Resume';
@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <div>
-      <Header />
+      <HomePageHero />
       <About />
       <Services />
       <Resume />

@@ -68,7 +68,7 @@ const About = () => {
             </div>
 
             <div className="about-cta">
-              <button className="download-cv">
+              <button className="download-cv" onClick={() => window.open(require('../../assets/document/resume.pdf'), '_blank')}>
                 Download CV
                 <i className="fas fa-download"></i>
               </button>

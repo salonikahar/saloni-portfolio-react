@@ -1,6 +1,6 @@
 .resume-section {
   padding: 5rem 2rem;
-  background: var(--bg-primary);
+  background: transparent;
   min-height: 100vh;
 }
 

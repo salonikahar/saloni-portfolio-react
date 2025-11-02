@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioController from '../../controllers/PortfolioController';
-import '../../assets/css/Header.css';
+import '../../assets/css/HomePage.css';
 
-const Header = () => {
+const HomePage = () => {
   const { name, title, location } = PortfolioController.getProfile();
   const [animatedText, setAnimatedText] = useState(0);
-  const roles = ["Web Developer", "UI/UX Designer", "React Specialist"];
+  const roles = ["Web Developer", "React Specialist"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,23 +14,23 @@ const Header = () => {
     return () => clearInterval(interval);
   }, []);
 
+
+
   return (
     <section className="hero-section" id="home">
-      
-
       <div className="hero-content">
         <div className="hero-text">
           <div className="greeting">
             <span className="greeting-text">👋 Hello, I'm</span>
           </div>
-          
+
           <h1 className="hero-name">{name}</h1>
-          
+
           <div className="hero-title">
             <div className="roles-wrapper">
               {roles.map((role, index) => (
-                <span 
-                  key={index} 
+                <span
+                  key={index}
                   className={`role ${index === animatedText ? 'active' : ''}`}
                 >
                   {role}
@@ -71,15 +71,12 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="scroll-indicator">
-          <div className="mouse">
-            <div className="wheel"></div>
-          </div>
-          <div className="scroll-text">Scroll Down</div>
-        </div>
+
       </div>
+
+
     </section>
   );
 };
 
-export default Header;
+export default HomePage;
