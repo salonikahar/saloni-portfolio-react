@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioController from '../../controllers/PortfolioController';
-import './Header.css';
+import '../../assets/css/Header.css';
 
 const Header = () => {
   const { name, title, location } = PortfolioController.getProfile();
@@ -16,13 +16,7 @@ const Header = () => {
 
   return (
     <section className="hero-section" id="home">
-      <div className="particles-background">
-        <div className="particle"></div>
-        <div className="particle"></div>
-        <div className="particle"></div>
-        <div className="particle"></div>
-        <div className="particle"></div>
-      </div>
+      
 
       <div className="hero-content">
         <div className="hero-text">

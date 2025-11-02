@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioController from '../../controllers/PortfolioController';
-import './Resume.css';
+import '../../assets/css/Resume.css';
 
 const Resume = () => {
   const skills = PortfolioController.getSkills();

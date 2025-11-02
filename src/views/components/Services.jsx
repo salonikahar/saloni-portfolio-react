@@ -1,5 +1,5 @@
 import React from 'react';
-import './Services.css';
+import '../../assets/css/Services.css';
 import PortfolioController from '../../controllers/PortfolioController';
 
 const Services = () => {

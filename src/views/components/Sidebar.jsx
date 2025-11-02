@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Sidebar.css';
+import '../../assets/css/Sidebar.css';
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState('home');

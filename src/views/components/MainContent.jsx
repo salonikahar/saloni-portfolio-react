@@ -7,11 +7,18 @@ import Portfolio from './Portfolio';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
-import './MainContent.css';
+import '../../assets/css/MainContent.css';
 
 const MainContent = () => {
   return (
     <main className="main-content">
+      <div className="particles-background">
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+      </div>
       <Header />
       <About />
       <Services />

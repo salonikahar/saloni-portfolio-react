@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioController from '../../controllers/PortfolioController';
-import './About.css';
+import '../../assets/css/About.css';
 
 const About = () => {
   const profile = PortfolioController.getProfile();
@@ -23,7 +23,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="about-section">
+    <>
+      
+      <section id="about" className="about-section">
+      
       <div className="section-content">
         <div className="section-header">
           <span className="section-subtitle">Get To Know</span>
@@ -108,6 +111,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

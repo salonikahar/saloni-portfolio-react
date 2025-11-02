@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioController from '../../controllers/PortfolioController';
-import './Testimonials.css';
+import '../../assets/css/Testimonials.css';
 
 const Testimonials = () => {
   const tests = PortfolioController.getTestimonials();
