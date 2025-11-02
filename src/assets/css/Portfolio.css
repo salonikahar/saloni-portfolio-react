@@ -65,7 +65,6 @@
   background: var(--bg-secondary);
   border-radius: 20px;
   overflow: hidden;
-  height: 100%;
   border: 1px solid var(--dark-border);
   transition: all 0.3s ease;
 }
@@ -77,6 +76,7 @@
 .portfolio-image {
   position: relative;
   height: 250px;
+  width: 250px;
   overflow: hidden;
 }
 

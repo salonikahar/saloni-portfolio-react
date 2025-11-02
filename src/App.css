@@ -79,6 +79,7 @@ body {
   transition: margin-left 0.3s ease;
   background: var(--bg-primary);
   color: var(--text-primary);
+  width: 100%;
 }
 
 /* Background Pattern Setup */
@@ -198,11 +199,14 @@ p {
   .main-content {
     margin-left: var(--sidebar-width-mobile);
     padding: 1.5rem;
+    width: 100vw;
+    margin-left: 0 !important;
   }
 
   .main-content::before,
   .main-content::after {
-    left: var(--sidebar-width-mobile);
+    left: 0;
+    width: 100vw;
   }
 }
 

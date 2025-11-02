@@ -286,4 +286,83 @@
   .timeline-content {
     padding: 1.2rem;
   }
+
+  .resume-content {
+    padding: 0 1rem;
+  }
+
+  .timeline-section {
+    margin-bottom: 2rem;
+  }
+
+  .skills-section {
+    padding: 1.5rem;
+  }
+
+  .additional-info {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .download-cv {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-content h5 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-date {
+    font-size: 0.85rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+  }
+
+  .skills-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-item {
+    margin-bottom: 1rem;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .skill-percentage {
+    font-size: 0.9rem;
+  }
+
+  .cert-item {
+    padding: 1.2rem;
+  }
+
+  .cert-item h4 {
+    font-size: 1rem;
+  }
+
+  .cert-item p {
+    font-size: 0.85rem;
+  }
 }

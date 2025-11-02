@@ -318,4 +318,55 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
+  .about-content {
+    padding: 0 1rem;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .personal-info {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-greeting {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .stats-container {
+    padding: 0 1rem;
+  }
+
+  .skills-showcase {
+    padding: 1.5rem 1rem;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
 }

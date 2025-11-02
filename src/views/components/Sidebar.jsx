@@ -92,18 +92,17 @@ const Sidebar = () => {
           <ul className="nav-list">
             {navItems.map(item => (
               <li key={item.id}>
-                <a 
-                  href={`#${item.id}`} 
+                <a
+                  href={`#${item.id}`}
                   className={`nav-link ${activeSection === item.id ? 'active' : ''}`}
                 >
                   <div className='d-flex align-items-center'>
-                  <span className="nav-icon">
-                    <i className={item.icon}></i>
-                  </span>
-                  <span className="nav-label">{item.label}</span>
+                    <span className="nav-icon">
+                      <i className={item.icon}></i>
+                    </span>
+                    <span className="nav-label">{item.label}</span>
                   </div>
-                  {activeSection === item.id && <span className="nav-active-marker"></span>
-                  }
+                  {activeSection === item.id && <span className="nav-active-marker"></span>}
                 </a>
               </li>
             ))}

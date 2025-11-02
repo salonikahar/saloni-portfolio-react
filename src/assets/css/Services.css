@@ -199,9 +199,25 @@
   .service-card {
     padding: 2rem 1.5rem;
   }
+
+  .service-content {
+    text-align: center;
+  }
+
+  .service-features {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
+  .services-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
   .service-icon {
     width: 60px;
     height: 60px;
@@ -210,5 +226,13 @@
 
   .service-title {
     font-size: 1.3rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .service-features li {
+    font-size: 0.9rem;
   }
 }

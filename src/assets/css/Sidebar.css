@@ -8,8 +8,13 @@
   background: var(--dark-bg-primary);
   border-right: 1px solid var(--dark-border);
   overflow: hidden;
-  transition: var(--transition);
+  transition: transform 0.3s ease;
   z-index: 1000;
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
 }
 
 /* Target element (like your sidebar or the whole page) */
@@ -276,53 +281,17 @@
   transform: translateY(-3px);
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 1024px) {
+/* Desktop: Always visible */
+@media (min-width: 1025px) {
   .sidebar {
-    --sidebar-width: 240px;
-  }
-
-  .profile-pic-wrapper {
-    width: 120px;
-    height: 120px;
-  }
-
-  .profile-info h1 {
-    font-size: 1.3rem;
+    transform: translateX(0) !important;
   }
 }
 
-@media (max-width: 768px) {
+/* Hide sidebar on tablet and mobile, show mobile header instead */
+@media (max-width: 1024px) {
   .sidebar {
-    --sidebar-width: 70px;
-    padding: 1rem 0.5rem;
-  }
-
-  .sidebar-profile, .sidebar-footer {
     display: none;
-  }
-
-  .nav-label {
-    display: none;
-  }
-
-  .nav-icon {
-    margin-right: 0;
-  }
-
-  .nav-link {
-    justify-content: center;
-    padding: 0.8rem;
-  }
-
-  .nav-active-marker {
-    width: 100%;
-    height: 3px;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 4px 4px 0 0;
   }
 }
 
