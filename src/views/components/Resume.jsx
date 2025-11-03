@@ -7,22 +7,14 @@ const Resume = () => {
   
   const education = [
     {
-      degree: "Bachelor Degree - Computer Science",
+      degree: "Bachelor Degree - Computer Applications(BCA)",
       school: "University Name",
-      year: "2020 - 2024",
-      description: "Studied computer science fundamentals, algorithms, and software development."
+      year: "2023 - 2026",
+      description: "Studied computer Application fundamentals, algorithms, and software development."
     }
   ];
 
-  const experience = [
-    {
-      role: "Front-end Developer",
-      company: "Company Name",
-      duration: "2024 - Present",
-      type: "Internship",
-      description: "Developed responsive web applications using React.js and modern front-end technologies."
-    }
-  ];
+
 
   return (
     <section id="resume" className="resume-section">
@@ -60,7 +52,7 @@ const Resume = () => {
             </div>
 
             {/* Experience Timeline */}
-            <div className="timeline-section">
+            {/* <div className="timeline-section">
               <h3 className="timeline-title">
                 <i className="fas fa-briefcase"></i>
                 Experience
@@ -78,8 +70,29 @@ const Resume = () => {
                     </div>
                   </div>
                 ))}
+              </div> */}
+            {/* </div> */}
+
+            {/* Additional Skills/Certifications can be added here */}
+            <div className="additional-info">
+              <h3 className="info-title">
+                <i className="fas fa-certificate"></i>
+                Certifications
+              </h3>
+              <div className="cert-grid">
+                <div className="cert-item">
+                  <i className="fas fa-award"></i>
+                  <h4>Web Development</h4>
+                  <p>Complete Web Development Bootcamp</p>
+                </div>
+                <div className="cert-item">
+                  <i className="fas fa-award"></i>
+                  <h4>React.js</h4>
+                  <p>Advanced React and Redux</p>
+                </div>
               </div>
             </div>
+
           </div>
 
           <div className="resume-right">
@@ -107,25 +120,7 @@ const Resume = () => {
               </div>
             </div>
 
-            {/* Additional Skills/Certifications can be added here */}
-            <div className="additional-info">
-              <h3 className="info-title">
-                <i className="fas fa-certificate"></i>
-                Certifications
-              </h3>
-              <div className="cert-grid">
-                <div className="cert-item">
-                  <i className="fas fa-award"></i>
-                  <h4>Web Development</h4>
-                  <p>Complete Web Development Bootcamp</p>
-                </div>
-                <div className="cert-item">
-                  <i className="fas fa-award"></i>
-                  <h4>React.js</h4>
-                  <p>Advanced React and Redux</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

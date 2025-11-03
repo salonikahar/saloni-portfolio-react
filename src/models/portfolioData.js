@@ -1,12 +1,12 @@
 const portfolioData = {
   name: "Saloni Kahar",
   title: "Web Developer",
-  location: "Gujarat, India",
-  email: "your-email@example.com",
-  phone: "+91-XXXXXXXXXX",
+  location: "Surat, Gujarat",
+  email: "salonikahar2011@gmail.com",
+  phone: "+91-8849025657",
   about: "I am Saloni Kahar, a Web Developer focusing on building responsive and modern web applications.",
   stats: {
-    experience: "1+",
+    experience: "(Intern) 0",
     clients: 3,
     projects: 22,
     awards: 3
@@ -32,17 +32,6 @@ const portfolioData = {
         "State Management",
         "Custom Hooks",
         "Performance Optimization"
-      ]
-    },
-    {
-      title: "UI/UX Design",
-      desc: "Designing intuitive and engaging user experiences that drive results.",
-      icon: "fas fa-pencil-ruler",
-      features: [
-        "User Interface Design",
-        "User Experience Design",
-        "Wireframing",
-        "Prototyping"
       ]
     },
     {
@@ -83,6 +72,7 @@ const portfolioData = {
     HTML: 100,
     CSS: 90,
     JavaScript: 85,
+    Bootstrap: 90,
     React: 95,
     NodeJS: 80,
     MongoDB: 75

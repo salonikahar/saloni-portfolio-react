@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import '../../assets/css/Contact.css';
 
 const Contact = () => {
@@ -9,6 +10,9 @@ const Contact = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -17,37 +21,56 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitMessage('');
+
+  try {
+    const serviceId = 'service_pdoai4b';
+    const templateId = 'template_bjnyv4f';
+    const publicKey = 'osDawpmadFTx5AEWG';
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      time: new Date().toLocaleString(),
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+    console.log('Email sent successfully:', result);
+
+    setSubmitMessage('Message sent successfully!');
+    setFormData({ name: '', email: '', subject: '', message: '' });
+  } catch (error) {
+    console.error('Email send failed:', error);
+    setSubmitMessage(`Failed to send message. Please try again.`);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   const contactInfo = [
     {
       icon: '📧',
       title: 'Email',
-      content: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      content: 'salonikahar2011@gmail.com',
+      link: 'mailto:salonikahar2011@gmail.com'
     },
     {
       icon: '📱',
       title: 'Phone',
-      content: '+1 (234) 567-8900',
-      link: 'tel:+12345678900'
+      content: '8849025657',
+      link: 'tel:+91-8849025657'
     },
     {
       icon: '🌍',
       title: 'Location',
-      content: 'City, Country',
-      link: 'https://maps.google.com'
+      content: 'Surat, Gujarat',
+      link: 'https://www.google.com/maps/place/Surat,+Gujarat'
     }
   ];
 
@@ -88,16 +111,16 @@ const Contact = () => {
             <div className="social-links">
               <h4>Find me on</h4>
               <div className="social-icons">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://www.linkedin.com/in/saloni-kahar-a85b032b5" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://github.com/salonikahar" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-github"></i>
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://www.instagram.com/s_kahar_11" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>
@@ -149,10 +172,16 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="submit-btn">
-                Send Message
-                <i className="fas fa-paper-plane"></i>
+              <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+                <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'}`}></i>
               </button>
+
+              {submitMessage && (
+                <div className={`submit-message ${submitMessage.includes('successfully') ? 'success' : 'error'}`}>
+                  {submitMessage}
+                </div>
+              )}
             </form>
           </div>
         </div>

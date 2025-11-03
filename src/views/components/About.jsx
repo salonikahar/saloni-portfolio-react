@@ -15,12 +15,7 @@ const About = () => {
     { icon: '🎓', label: 'Degree', value: 'Bachelor in Computer Science' }
   ];
 
-  const statsItems = [
-    { number: stats.experience, label: 'Years of Experience', icon: '⏳' },
-    { number: stats.clients, label: 'Satisfied Clients', icon: '🤝' },
-    { number: stats.projects, label: 'Projects Completed', icon: '💼' },
-    { number: stats.awards, label: 'Awards Received', icon: '🏆' }
-  ];
+
 
   return (
     <>
@@ -80,19 +75,6 @@ const About = () => {
           </div>
         </div>
 
-        <div className="stats-container">
-          {statsItems.map((item, index) => (
-            <div key={index} className="stat-card">
-              <div className="stat-icon">{item.icon}</div>
-              <div className="stat-content">
-                <h3 className="stat-number">
-                  <span className="counter">{item.number}</span>+
-                </h3>
-                <p className="stat-label">{item.label}</p>
-              </div>
-            </div>
-          ))}
-        </div>
 
         <div className="skills-showcase">
           <h3 className="skills-title">
