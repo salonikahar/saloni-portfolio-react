@@ -63,8 +63,8 @@ const About = () => {
             </div>
 
             <div className="about-cta">
-              <button className="download-cv" onClick={() => window.open(require('../../assets/document/resume.pdf'), '_blank')}>
-                Download CV
+              <button className="download-cv" onClick={() => window.open(require('../../assets/document/Resume - Saloni Kahar.pdf'), '_blank')}>
+                Download Resume
                 <i className="fas fa-download"></i>
               </button>
               <a href="#contact" className="contact-btn">

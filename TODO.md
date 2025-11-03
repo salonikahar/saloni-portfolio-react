@@ -1,6 +1,16 @@
-# TODO: Set Image for Project 1 to Sneakers Image
+# TODO: Fix Mobile Responsiveness in About Section
 
-- [x] Update `src/models/portfolioData.js` to import the sneakers image and set it for Project 1
-- [x] Update `src/views/components/Portfolio.jsx` to display the actual image instead of placeholder
-- [x] Update `src/assets/css/Portfolio.css` to style the image properly
-- [x] Test the changes by running the app to ensure the image displays correctly
+## Tasks
+- [x] Update About.css with enhanced mobile breakpoints and rules
+  - [x] Improve image sizing and centering on mobile screens
+  - [x] Adjust grid layouts for better stacking on small screens
+  - [x] Optimize text, button, and skills tag layouts for mobile
+  - [x] Reduce gaps and padding for compact mobile display
+- [x] Test changes using browser developer tools in mobile view
+- [ ] Verify all elements display properly on various mobile screen sizes
+
+## Progress
+- Plan approved by user
+- CSS updates completed
+- App compiled successfully
+- Browser testing attempted but tool unavailable - manual testing recommended
