@@ -37,16 +37,16 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Connect</h4>
               <div className="social-links">
-                <a href="#" className="social-link" aria-label="GitHub">
+                <a href="https://www.linkedin.com/in/saloni-kahar-a85b032b5" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/salonikahar" target="_blank" rel="noopener noreferrer" className="social-link">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="#" className="social-link" aria-label="LinkedIn">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" className="social-link" aria-label="Twitter">
+                <a href="https://twitter.com/salonikahar" target="_blank" rel="noopener noreferrer" className="social-link">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#" className="social-link" aria-label="Instagram">
+                <a href="https://www.instagram.com/s_kahar_11" target="_blank" rel="noopener noreferrer" className="social-link">
                   <i className="fab fa-instagram"></i>
                 </a>
               </div>

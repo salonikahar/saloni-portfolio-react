@@ -117,7 +117,7 @@ const Contact = () => {
                 <a href="https://github.com/salonikahar" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://twitter.com/salonikahar" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a href="https://www.instagram.com/s_kahar_11" target="_blank" rel="noopener noreferrer" className="social-icon">

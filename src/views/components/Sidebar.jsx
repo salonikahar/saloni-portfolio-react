@@ -55,12 +55,12 @@ const Sidebar = () => {
       label: 'Portfolio',
       description: 'Recent Projects'
     },
-    {
-      id: 'testimonials',
-      icon: 'fas fa-comment-dots',
-      label: 'Testimonials',
-      description: 'Client Reviews'
-    },
+    // {
+    //   id: 'testimonials',
+    //   icon: 'fas fa-comment-dots',
+    //   label: 'Testimonials',
+    //   description: 'Client Reviews'
+    // },
     {
       id: 'contact',
       icon: 'fas fa-paper-plane',

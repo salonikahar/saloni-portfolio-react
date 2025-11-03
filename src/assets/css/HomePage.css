@@ -4,20 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-primary);
-  overflow: hidden;
-  padding: 0 2rem;
-}
-
-.hero-section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: radial-gradient(circle at center, var(--bg-primary) 40%, #0d0d18 100%);
   overflow: hidden;
-  padding: 0 2rem;
-   border-radius: 20px;
+  padding: 0 0.5rem;
+  border-radius: 20px;
 }
 
 /* 🌈 Smooth Gradient Waves */

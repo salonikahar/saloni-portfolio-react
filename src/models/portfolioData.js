@@ -84,8 +84,8 @@ const portfolioData = {
     { img: "public/assets/work4.png", title: "Project 4" }
   ],
   testimonials: [
-    { name: "Hardik Patel", role: "Founder - Vivid Vortex", feedback: "Great work and timely delivery." },
-    { name: "Hiren Sondagar", role: "Founder - WinSoft Tech", feedback: "High quality web solutions." }
+    { name: "Hardik Patel", role: "Founder - Vivid Vortex", feedback: "Great work and timely delivery.", rating: 5 },
+    { name: "Hiren Sondagar", role: "Founder - WinSoft Tech", feedback: "High quality web solutions.", rating: 5 }
   ]
 };
 

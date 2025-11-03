@@ -4,7 +4,7 @@ import About from './About';
 import Services from './Services';
 import Resume from './Resume';
 import Portfolio from './Portfolio';
-import Testimonials from './Testimonials';
+// import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
 import '../../assets/css/MainContent.css';
@@ -45,8 +45,8 @@ const MainContent = () => {
       <About />
       <Services />
       <Resume />
+      {/* <Testimonials /> */}
       <Portfolio />
-      <Testimonials />
       <Contact />
       <Footer />
     </main>
