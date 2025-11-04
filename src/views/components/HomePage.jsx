@@ -45,10 +45,12 @@ const HomePage = () => {
           </p>
 
           <div className="hero-cta">
-            <button className="primary-btn">
-              Let's Connect
-              <i className="fas fa-arrow-right"></i>
-            </button>
+            <a href="#contact" style={{textDecoration:'none'}} >
+              <button className="primary-btn">
+                Let's Connect
+                <i className="fas fa-arrow-right"></i>
+              </button>
+            </a>
             <a href="https://saloni-portfolio-react.vercel.app/" style={{textDecoration:'none'}}>
               <button className="secondary-btn" >
                 View Portfolio

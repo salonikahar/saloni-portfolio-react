@@ -12,7 +12,7 @@ const About = () => {
     { icon: '📍', label: 'Location', value: profile.location },
     { icon: '🌐', label: 'Languages', value: 'English, Hindi' },
     { icon: '👨‍💼', label: 'Experience', value: `${stats.experience} Years` },
-    { icon: '🎓', label: 'Degree', value: 'Bachelor in Computer Science' }
+    { icon: '🎓', label: 'Degree', value: 'Bachelor in Computer Application' }
   ];
 
 
