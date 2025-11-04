@@ -1,8 +1,3 @@
-import sneakersImage from '../assets/image/project/sneakershub-project-image.jpg';
-import project2imag from '../assets/image/project/project2-electronicEcomBootstrap.png';  
-import project3imag from '../assets/image/project/AdminPanel.png';  
-import project4imag from '../assets/image/project/woodmart.png';
-
 const portfolioData = {
   name: "Saloni Kahar",
   title: "Web Developer",
@@ -83,10 +78,42 @@ const portfolioData = {
     MongoDB: 75
   },
   portfolio: [
-    { img: sneakersImage, title: "Sneakers Hub (E-commerce)", link: "https://sneakers-hub-five.vercel.app/", description: "Sneakers Hub is an e-commerce platform for sneakers, built with React and Node.js. It features user authentication, product catalog, shopping cart, and payment integration." },
-    { img: project2imag, title: "Techno Web (E-commerce)", link: "https://salonikahar.github.io/techno-web/", description: "Techno Web is a visually appealing, responsive web interface designed to showcase digital and electronics products with a modern, sleek design. The home page features large banner sections offering discounts (“Flat 30% off on all Digital”), prominent category highlights (“Trending Categories”), and a rich selection of products (headphones, laptops, smart-watches, mobile phones) each with pricing, discount information, and “Add to Cart” buttons." },
-    { img: project3imag , title: "Admin panel" , link: "https://salonikahar.github.io/AdminPanel/", description: "A sleek and responsive admin dashboard designed to manage user data, analytics and insights. It features a clean sidebar navigation, modern typography, and interactive charts and tables that make monitoring system activity intuitive and efficient. Built with a focus on usability, this admin panel provides an organized interface for administrators to track performance, view reports, and update settings—all in one accessible web application." },
-    { img: project4imag , title: "Woodmart E-commerce Website" ,  link : "https://salonikahar.github.io/css-project/" , description : 'A vibrant and responsive web layout built purely with HTML and CSS, this project showcases modern front-end design and typography. It features structured sections such as hero banners, feature highlights, and content cards, all styled with clean spacing, consistent colour palette and fluid grid layout. This site demonstrates strong CSS skills—media queries, flexbox or grid usage, and aesthetic coherence—making it a compelling addition to your dev portfolio.' }
+    {
+      img: "/assets/image/project/sneakershub-project-image.jpg",
+      title: "Sneakers Hub (E-commerce)",
+      link: "https://sneakers-hub-five.vercel.app/",
+      description: "Sneakers Hub is an e-commerce platform for sneakers, built with React and Node.js. It features user authentication, product catalog, shopping cart, and payment integration.",
+      purpose: "To create a modern e-commerce platform for sneaker enthusiasts with seamless shopping experience.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+      github: "https://github.com/salonikahar/sneakersHub"
+    },
+    {web
+      img: "/assets/image/project/project2-electronicEcomBootstrap.png",
+      title: "Techno Web (E-commerce)",
+      link: "https://salonikahar.github.io/techno-web/",
+      description: "Techno Web is a visually appealing, responsive web interface designed to showcase digital and electronics products with a modern, sleek design. The home page features large banner sections offering discounts (“Flat 30% off on all Digital”), prominent category highlights (“Trending Categories”), and a rich selection of products (headphones, laptops, smart-watches, mobile phones) each with pricing, discount information, and “Add to Cart” buttons.",
+      purpose: "To create an attractive e-commerce showcase for electronic products with modern UI/UX design.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      github: "https://github.com/salonikahar/techno-web"
+    },
+    {
+      img: "/assets/image/project/AdminPanel.png",
+      title: "Admin panel",
+      link: "https://salonikahar.github.io/AdminPanel/",
+      description: "A sleek and responsive admin dashboard designed to manage user data, analytics and insights. It features a clean sidebar navigation, modern typography, and interactive charts and tables that make monitoring system activity intuitive and efficient. Built with a focus on usability, this admin panel provides an organized interface for administrators to track performance, view reports, and update settings—all in one accessible web application.",
+      purpose: "To build a comprehensive admin dashboard for managing system analytics and user data.",
+      technologies: ["HTML", "CSS", "JavaScript", "Chart.js"],
+      github: "https://github.com/salonikahar/Admin-panel"
+    },
+    {
+      img: "/assets/image/project/woodmart.png",
+      title: "Woodmart E-commerce Website",
+      link: "https://salonikahar.github.io/css-project/",
+      description: 'A vibrant and responsive web layout built purely with HTML and CSS, this project showcases modern front-end design and typography. It features structured sections such as hero banners, feature highlights, and content cards, all styled with clean spacing, consistent colour palette and fluid grid layout. This site demonstrates strong CSS skills—media queries, flexbox or grid usage, and aesthetic coherence—making it a compelling addition to your dev portfolio.',
+      purpose: "To demonstrate advanced CSS skills and create a modern e-commerce layout using only HTML and CSS.",
+      technologies: ["HTML", "CSS", "Flexbox", "Grid"],
+      github: "https://github.com/salonikahar/css-project"
+    }
   ],
   testimonials: [
     { name: "Hardik Patel", role: "Founder - Vivid Vortex", feedback: "Great work and timely delivery.", rating: 5 },

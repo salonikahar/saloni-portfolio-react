@@ -1,16 +1,20 @@
-# TODO: Fix Mobile Responsiveness in About Section
+# Portfolio Modal Layout Improvement
 
 ## Tasks
-- [x] Update About.css with enhanced mobile breakpoints and rules
-  - [x] Improve image sizing and centering on mobile screens
-  - [x] Adjust grid layouts for better stacking on small screens
-  - [x] Optimize text, button, and skills tag layouts for mobile
-  - [x] Reduce gaps and padding for compact mobile display
-- [x] Test changes using browser developer tools in mobile view
-- [ ] Verify all elements display properly on various mobile screen sizes
+- [x] Update Portfolio.css to change modal from single-column to two-column layout (image left, details right)
+- [x] Ensure responsive design for mobile devices (stack vertically on small screens)
+- [x] Test the updated layout in the browser
+- [x] Fix z-index issue where contact and footer sections overlay the project details modal
+- [x] Fix background scrolling when modal is open
+- [x] Improve modal background opacity and blur for better content hiding
+- [x] Auto-scroll to portfolio section when modal opens
+- [x] Auto-scroll to portfolio section when modal closes via close button
 
-## Progress
-- Plan approved by user
-- CSS updates completed
-- App compiled successfully
-- Browser testing attempted but tool unavailable - manual testing recommended
+## Notes
+- Current issue: Project image (poster) not displaying properly in modal
+- Proposed fix: Two-column layout for better space utilization and visibility
+- Additional fix: Increased modal z-index to prevent overlay issues with contact/footer sections
+- Additional fix: Prevented background scrolling when modal is open using body class toggle
+- Additional fix: Enhanced modal background with higher opacity (0.95) and stronger blur (10px) to completely hide background content
+- Additional fix: Added smooth scroll to portfolio section when modal opens for better user experience
+- Additional fix: Added smooth scroll to portfolio section when modal closes via close button for consistent UX
