@@ -24,20 +24,9 @@ const HomePage = () => {
             <span className="greeting-text">👋 Hello, I'm</span>
           </div>
 
-          <h1 className="hero-name">{name}</h1>
+          <h1 className="typing">{name}</h1>
 
-          <div className="hero-title">
-            <div className="roles-wrapper">
-              {roles.map((role, index) => (
-                <span
-                  key={index}
-                  className={`role ${index === animatedText ? 'active' : ''}`}
-                >
-                  {role}
-                </span>
-              ))}
-            </div>
-          </div>
+         
 
           <p className="hero-description">
             <span className="location-icon">📍</span>
