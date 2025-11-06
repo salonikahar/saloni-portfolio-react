@@ -1,20 +1,15 @@
-# Portfolio Modal Layout Improvement
+# Mobile Responsiveness Improvements for Home Page
 
 ## Tasks
-- [x] Update Portfolio.css to change modal from single-column to two-column layout (image left, details right)
-- [x] Ensure responsive design for mobile devices (stack vertically on small screens)
-- [x] Test the updated layout in the browser
-- [x] Fix z-index issue where contact and footer sections overlay the project details modal
-- [x] Fix background scrolling when modal is open
-- [x] Improve modal background opacity and blur for better content hiding
-- [x] Auto-scroll to portfolio section when modal opens
-- [x] Auto-scroll to portfolio section when modal closes via close button
+- [ ] Adjust font sizes for better readability on mobile devices (reduce hero name, greeting, and description sizes further)
+- [ ] Optimize padding and margins for smaller screens to prevent overflow and improve spacing
+- [ ] Ensure buttons are full-width and properly spaced on mobile
+- [ ] Adjust social links layout for better mobile usability
+- [ ] Test the changes on mobile viewports
 
-## Notes
-- Current issue: Project image (poster) not displaying properly in modal
-- Proposed fix: Two-column layout for better space utilization and visibility
-- Additional fix: Increased modal z-index to prevent overlay issues with contact/footer sections
-- Additional fix: Prevented background scrolling when modal is open using body class toggle
-- Additional fix: Enhanced modal background with higher opacity (0.95) and stronger blur (10px) to completely hide background content
-- Additional fix: Added smooth scroll to portfolio section when modal opens for better user experience
-- Additional fix: Added smooth scroll to portfolio section when modal closes via close button for consistent UX
+## Dependent Files
+- src/assets/css/HomePage.css (primary file for responsive adjustments)
+
+## Followup Steps
+- Run the development server and test on mobile devices or browser dev tools
+- Verify layout looks proper on various mobile screen sizes

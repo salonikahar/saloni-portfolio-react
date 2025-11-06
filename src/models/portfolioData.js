@@ -87,7 +87,7 @@ const portfolioData = {
       technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
       github: "https://github.com/salonikahar/sneakersHub"
     },
-    {web
+    {
       img: "/assets/image/project/project2-electronicEcomBootstrap.png",
       title: "Techno Web (E-commerce)",
       link: "https://salonikahar.github.io/techno-web/",
